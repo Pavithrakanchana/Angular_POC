@@ -1,0 +1,25 @@
+<div>
+    <div>
+        <h1>Data Binding</h1>
+    </div>
+    <div class="interpolation">
+        {{ this.text }}
+    </div>
+    <br/>
+    <div class="propB">
+        <input type="text" placeholder="" value="this is disabled by PropB" [disabled]="true"/>
+    </div>
+    <br/>
+    <div class="eventB">
+        <button type="submit" (click)="onClick($event)">Click Me!</button>
+    </div>
+    <br/>
+    <div class="twoWayB">
+        <div>
+        <input type="text" placeholder="" [(ngModel)]="textValue"/>
+        </div>
+        <div>
+            {{  textValue }}
+        </div>
+    </div>
+</div>
