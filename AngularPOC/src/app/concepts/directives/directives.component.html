@@ -21,7 +21,10 @@
         <h4>Attribute Directives</h4>
     </div>
     <!-- ngClass -->
+     <span [ngClass]="{'highlight': isHighlighted, 'italic': isItalic}">this is from attribute directive</span>
     <!-- ngStyle -->
+     <p [ngStyle]="{'color': isActive ? 'green' : 'red'}">This is dynamic!</p>
     <!-- ngModel -->
-    <!-- ngTemplateOutlet -->
+     <input [(ngModel)]="name" type="text"/>
+     <span>{{ name }}</span>
 </div>
