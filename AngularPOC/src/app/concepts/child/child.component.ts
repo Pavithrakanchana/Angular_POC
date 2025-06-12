@@ -3,7 +3,7 @@ import { CommonModule, NgIf } from '@angular/common';
 @Component({
   selector: 'app-child',
   standalone: true,
-  imports: [CommonModule,NgIf],
+  imports: [CommonModule],
   templateUrl: './child.component.html',
   styleUrl: './child.component.css'
 })
