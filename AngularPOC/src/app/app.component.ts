@@ -4,13 +4,14 @@ import { DataBindingComponent } from "./concepts/data-binding/data-binding.compo
 import { DirectivesComponent } from "./concepts/directives/directives.component";
 import { ParentComponent } from './concepts/parent/parent.component';
 import { FirstChildComponent } from "./concepts/ViewChilds/first-child/first-child.component";
+import { CustomDirectivesComponent } from './concepts/custom-directives/custom-directives.component';
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, DataBindingComponent, DirectivesComponent, ParentComponent, FirstChildComponent],
+  imports: [RouterOutlet, DataBindingComponent, DirectivesComponent, ParentComponent, FirstChildComponent, CustomDirectivesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
