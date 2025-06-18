@@ -7,6 +7,9 @@
             <mat-form-field class="example-full-width">
                 <mat-label>Name</mat-label>
                 <input matInput [(ngModel)]="userDetails.name" name="name">
+                <!-- <div *ngIf="userForm.controls.name?.touched && userForm.controls.name?.invalid" class="text-danger">
+                    Name is required.
+                </div> -->
             </mat-form-field>
             <mat-form-field class="example-full-width">
                 <mat-label>Email</mat-label>
